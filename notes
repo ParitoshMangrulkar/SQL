@@ -1,0 +1,13 @@
+
+Disk size : Table
+----------------
+
+select num_rows, blocks*8192/1024/1024 MB
+from user_tables
+where table_name = 'XYZ';
+
+NUM_ROWS      MB
+----         ---
+10308870     1522.6
+
+-----------------------------------------------------------
